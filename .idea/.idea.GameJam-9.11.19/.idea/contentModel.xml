@@ -6,11 +6,13 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="PlanetOrbit.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Bear.cs" t="Include" />
           <e p="Default.cs" t="Include" />
           <e p="FlickVisual.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
+          <e p="PlanetMovement.cs" t="Include" />
         </e>
       </e>
       <e p="GameJam-9.11.19.sln" t="IncludeFlat" />

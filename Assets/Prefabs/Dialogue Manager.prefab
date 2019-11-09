@@ -1345,6 +1345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b467cf06854584b02e4ea212cb2dcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameManager: {fileID: 0}
   DialogueScreens:
   - {fileID: 5304753903942887774}
   - {fileID: 5304753903657206839}

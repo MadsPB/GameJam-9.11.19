@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_GameJam-9.11.19.228654849.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Bear.cs" t="Include" />
-<<<<<<< HEAD
           <e p="BearCollisionDetector.cs" t="Include" />
-          <e p="Default.cs" t="Include" />
-=======
->>>>>>> 3c223c3c2fbf1da504f17e3d090c91a6f990c8fc
           <e p="FlickVisual.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
@@ -20,7 +14,7 @@
           <e p="PlanetMovement.cs" t="Include" />
           <e p="PlanetOrbit.cs" t="Include" />
           <e p="PlanetPullBearBehavior.cs" t="Include" />
-<<<<<<< HEAD
+          <e p="StartSceneScript.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -50,14 +44,18 @@
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
-=======
->>>>>>> 3c223c3c2fbf1da504f17e3d090c91a6f990c8fc
         </e>
       </e>
       <e p="GameJam-9.11.19.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_GameJam-9.11.19.919532723.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
   </component>
 </project>

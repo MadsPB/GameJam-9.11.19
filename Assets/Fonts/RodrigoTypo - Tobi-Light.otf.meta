@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: e9b4714c734f1442898a692ba2bfc2dc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Tobi
+  fontNames:
+  - Tobi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 92575d7e788144efda00f22174d0b547, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

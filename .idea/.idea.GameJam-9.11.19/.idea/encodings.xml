@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
-=======
   <component name="Encoding" addBOMForNewFiles="with NO BOM" />
->>>>>>> c23d81d807f820db703d0863eda862b257b8b74c
 </project>

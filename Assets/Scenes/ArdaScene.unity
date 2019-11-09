@@ -881,7 +881,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 884.5901, y: 677}
+  m_SizeDelta: {x: 749, y: 574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622697590
 MonoBehaviour:
@@ -2143,6 +2143,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de84f18f20be646aca1422f3c0e686f9,
+        type: 3}
     - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
         type: 3}
       propertyPath: Moon
@@ -2158,12 +2164,6 @@ PrefabInstance:
       propertyPath: Speed
       value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: de84f18f20be646aca1422f3c0e686f9,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}
 --- !u!1 &1181276521 stripped
@@ -2986,11 +2986,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
-        type: 3}
-      propertyPath: Moon
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
         type: 3}
       propertyPath: m_Color.r
@@ -3017,6 +3012,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 43b5a2c3c92374e298ce2a59f7b98629,
         type: 3}
+    - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
+        type: 3}
+      propertyPath: Moon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}
@@ -3102,11 +3102,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
-        type: 3}
-      propertyPath: Moon
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
         type: 3}
       propertyPath: m_Color.r
@@ -3137,6 +3132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
+        type: 3}
+      propertyPath: Moon
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}

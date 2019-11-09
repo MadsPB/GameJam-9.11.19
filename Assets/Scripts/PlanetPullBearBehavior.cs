@@ -5,21 +5,23 @@ namespace DefaultNamespace
     public class PlanetPullBearBehavior : MonoBehaviour
     {
         public Bear Bear;
-
-        public float MaxForceCoefficient = 3f;
+        public float MaxDistance = 3f;
 
         void Update()
         {
-            var differenceVector = Bear.transform.position - transform.position;
-            var normalized = differenceVector.normalized;
-            var magnitude = differenceVector.magnitude;
-
-            if (magnitude < MaxForceCoefficient)
+            if (GameManager.didShoot)
             {
-                magnitude = 1- magnitude/MaxForceCoefficient;
+                var differenceVector = Bear.transform.position - transform.position;
+                var normalized = differenceVector.normalized;
+                var magnitude = differenceVector.magnitude;
 
-                var force = normalized * magnitude;
-                Bear.ApplyForce(force);
+                if (magnitude < MaxDistance)
+                {
+                    magnitude = 1 - magnitude / MaxDistance;
+
+                    var force = normalized * magnitude;
+                    Bear.ApplyForce(force);
+                }
             }
         }
     }

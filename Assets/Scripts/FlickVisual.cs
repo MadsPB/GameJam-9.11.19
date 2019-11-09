@@ -25,6 +25,7 @@ public class FlickVisual : MonoBehaviour
     {
         _startingPointerPosition = Vector2.zero;
         Hide();
+        GameManager.didShoot = true;
     }
 
     private void HandleDrag(Vector2 position)

@@ -6,18 +6,21 @@ namespace DefaultNamespace
     {
         public Bear Bear;
 
-        public float MaxForceCoefficient = 10f;
+        public float MaxForceCoefficient = 3f;
 
         void Update()
         {
             var differenceVector = Bear.transform.position - transform.position;
             var normalized = differenceVector.normalized;
             var magnitude = differenceVector.magnitude;
-            magnitude = Mathf.Min(MaxForceCoefficient, magnitude);
-            magnitude = MaxForceCoefficient - magnitude;
 
-            var force = normalized * magnitude;
-            Bear.ApplyForce(force);
+            if (magnitude < MaxForceCoefficient)
+            {
+                magnitude = 1- magnitude/MaxForceCoefficient;
+
+                var force = normalized * magnitude;
+                Bear.ApplyForce(force);
+            }
         }
     }
 }

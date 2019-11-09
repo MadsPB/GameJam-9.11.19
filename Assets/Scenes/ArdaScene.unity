@@ -810,7 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxForceCoefficient: 10
+  MaxDistance: 3
 --- !u!212 &745415509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -916,6 +916,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsTarget: 0
+--- !u!114 &784623859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784623855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0f90842c6d491eb730f820512a62d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bear: {fileID: 1349716468}
+  MaxDistance: 3
 --- !u!1 &788770144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,6 +1217,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsTarget: 1
+--- !u!114 &1079059220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079059217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0f90842c6d491eb730f820512a62d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bear: {fileID: 1349716468}
+  MaxDistance: 3
 --- !u!1001 &1180835143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1343,6 +1371,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsTarget: 0
+--- !u!114 &1181276524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181276521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0f90842c6d491eb730f820512a62d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bear: {fileID: 1349716468}
+  MaxDistance: 3
 --- !u!1 &1273789830
 GameObject:
   m_ObjectHideFlags: 0

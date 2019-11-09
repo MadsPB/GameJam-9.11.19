@@ -6,6 +6,7 @@ namespace DefaultNamespace
 {
     public class DialogueManager : MonoBehaviour
     {
+        public GameManager GameManager;
         public List<GameObject> DialogueScreens;
         public int CurrentIndex;
 
@@ -25,6 +26,10 @@ namespace DefaultNamespace
             {
                 DialogueScreens[CurrentIndex].SetActive(true);
                 CurrentIndex++;
+            }
+            else
+            {
+                GameManager.HandleDialogueFinished();
             }
         }
     }

@@ -1,15 +1,18 @@
 ﻿using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public Bear Bear;
     public UIManager UIManager;
     public static bool didShoot = false;
-    
+
     public bool IsGameActive;
 
     void Start()
     {
+        didShoot = false;
         IsGameActive = true;
     }
 
@@ -25,6 +28,16 @@ public class GameManager : MonoBehaviour
         {
             HandleLose();
         }
+    }
+
+    public void HandleDialogueFinished()
+    {
+        Bear.gameObject.SetActive(true);
+    }
+
+    public void HandleRestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void HandleWin()

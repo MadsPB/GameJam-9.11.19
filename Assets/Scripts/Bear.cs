@@ -7,7 +7,7 @@ public class Bear : MonoBehaviour
 
     public float MaxVelocityMagnitude = 7.5f;
     public float JumpForceCoefficient = 1f;
-
+    public GameObject Thruster;
     private Vector2 _startingPointerPosition;
 
     private Vector3 _lastPosition;
@@ -30,6 +30,8 @@ public class Bear : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
         }
 
+        Thruster.SetActive(moveDirection.magnitude > 0.01f);
+            
         _lastPosition = transform.position;
     }
 
@@ -42,6 +44,8 @@ public class Bear : MonoBehaviour
     {
         var direction = (position - _startingPointerPosition);
         Jump(direction);
+        GameManager.didShoot = true;
+        Thruster.gameObject.SetActive(true);
     }
 
     private void Jump(Vector2 direction)

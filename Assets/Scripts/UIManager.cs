@@ -6,6 +6,7 @@ namespace DefaultNamespace
     {
         public GameObject WinScreenGameObject;
         public GameObject LoseScreenGameObject;
+        public GameManager GameManager;
 
         public void ShowWinScreen()
         {
@@ -15,6 +16,11 @@ namespace DefaultNamespace
         public void ShowLoseScreen()
         {
             LoseScreenGameObject.SetActive(true);
+        }
+
+        public void OnLoseScreenRetryButtonClicked()
+        {
+            GameManager.HandleRestartGame();
         }
     }
 }

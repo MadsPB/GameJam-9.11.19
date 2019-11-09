@@ -1,12 +1,13 @@
 ﻿using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public UIManager UIManager;
     public static bool didShoot = false;
     public static GameManager instance;
-    
+
     public bool IsGameActive;
 
     void Start()
@@ -27,6 +28,11 @@ public class GameManager : MonoBehaviour
         {
             HandleLose();
         }
+    }
+
+    public void HandleRestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void HandleWin()

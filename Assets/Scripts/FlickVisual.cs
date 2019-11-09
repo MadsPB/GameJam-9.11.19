@@ -39,7 +39,7 @@ public class FlickVisual : MonoBehaviour
         var localScale = transform.localScale;
         localScale = new Vector3(localScale.x, yScale.magnitude * 0.01f, localScale.z);
         transform.localScale = localScale;
-        transform.localRotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg + 90f);
+        transform.rotation = Quaternion.Euler(0f, 0f, angle * Mathf.Rad2Deg + 90f);
     }
 
     private void Show()

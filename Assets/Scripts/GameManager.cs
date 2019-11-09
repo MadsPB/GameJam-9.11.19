@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        didShoot = false;
         instance = this;
         IsGameActive = true;
     }

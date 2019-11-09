@@ -16,7 +16,7 @@ TagManager:
   - 
   - Background
   - Planets
-  - 
+  - Bear
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Planets
     uniqueID: 1224108183
+    locked: 0
+  - name: Bear
+    uniqueID: 1699202997
     locked: 0

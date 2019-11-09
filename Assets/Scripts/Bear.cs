@@ -52,5 +52,8 @@ public class Bear : MonoBehaviour
     public void ApplyForce(Vector2 force)
     {
         Rigidbody2D.AddForce(-force);
+        var moveDirection = transform.position - _lastPosition;
+        Rigidbody2D.AddForce(moveDirection);
+
     }
 }

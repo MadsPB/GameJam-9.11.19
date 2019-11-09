@@ -5,7 +5,7 @@ namespace DefaultNamespace
     public class PlanetPullBearBehavior : MonoBehaviour
     {
         public Bear Bear;
-        public float MaxDistance = 3f;
+        private float MaxDistance = 1f;
 
         void Update()
         {

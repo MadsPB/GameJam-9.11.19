@@ -426,7 +426,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxDistance: 3
 --- !u!114 &468766144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,7 +1163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxDistance: 3
 --- !u!212 &745415509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1248,7 +1246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxDistance: 3
 --- !u!114 &776264932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,7 +1329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxDistance: 3
 --- !u!1 &788770144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1715,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxDistance: 3
 --- !u!224 &1099558917 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5304753903435728611, guid: 916fd656cd8dd4f869e26dd26a0089b6,
@@ -1808,6 +1803,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de84f18f20be646aca1422f3c0e686f9,
+        type: 3}
     - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
         type: 3}
       propertyPath: Moon
@@ -1823,12 +1824,6 @@ PrefabInstance:
       propertyPath: Speed
       value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: de84f18f20be646aca1422f3c0e686f9,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}
 --- !u!1 &1181276521 stripped
@@ -1879,7 +1874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bear: {fileID: 1349716468}
-  MaxDistance: 3
 --- !u!1 &1273789830
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2020,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -2465,11 +2459,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
-        type: 3}
-      propertyPath: Moon
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3156793681146505924, guid: 9659d0dca0443407bacfc95b1892d684,
         type: 3}
       propertyPath: m_Color.r
@@ -2496,6 +2485,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 43b5a2c3c92374e298ce2a59f7b98629,
         type: 3}
+    - target: {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684,
+        type: 3}
+      propertyPath: Moon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1492095290706023250, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}

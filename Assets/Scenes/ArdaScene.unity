@@ -1516,7 +1516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InputManager: {fileID: 2002479292}
   Rigidbody2D: {fileID: 1349716469}
-  MaxVelocityMagnitude: 7.5
+  MaxVelocityMagnitude: 3
   JumpForceCoefficient: 1
 --- !u!50 &1349716469
 Rigidbody2D:
@@ -1552,9 +1552,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.15}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.3
 --- !u!114 &1349716471
 MonoBehaviour:
   m_ObjectHideFlags: 0

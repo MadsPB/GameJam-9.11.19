@@ -29,7 +29,7 @@ namespace DefaultNamespace
             }
             else
             {
-                GameManager.HandleDialogueFinished();
+//                GameManager.HandleDialogueFinished();
             }
         }
     }

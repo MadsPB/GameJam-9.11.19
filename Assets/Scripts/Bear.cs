@@ -60,6 +60,6 @@ public class Bear : MonoBehaviour
 
         Rigidbody2D.AddForce(-force);
         var moveDirection = transform.position - _lastPosition;
-        Rigidbody2D.AddForce(moveDirection);
+        Rigidbody2D.AddForce(moveDirection.normalized);
     }
 }

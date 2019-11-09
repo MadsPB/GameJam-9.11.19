@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public UIManager UIManager;
     public static bool didShoot = false;
-
+    
     public bool IsGameActive;
 
     void Start()

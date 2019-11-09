@@ -1,18 +1,17 @@
 ﻿using DefaultNamespace;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public Bear Bear;
     public UIManager UIManager;
     public static bool didShoot = false;
-
+    public static GameManager instance;
+    
     public bool IsGameActive;
 
     void Start()
     {
-        didShoot = false;
+        instance = this;
         IsGameActive = true;
     }
 
@@ -30,17 +29,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void HandleDialogueFinished()
-    {
-        Bear.gameObject.SetActive(true);
-    }
-
-    public void HandleRestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    private void HandleWin()
+    public void HandleWin()
     {
         if (IsGameActive)
         {
@@ -49,7 +38,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void HandleLose()
+    public void HandleLose()
     {
         if (IsGameActive)
         {

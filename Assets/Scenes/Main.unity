@@ -220,6 +220,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9659d0dca0443407bacfc95b1892d684, type: 3}
+--- !u!1 &535256231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7309532645521951471, guid: 9659d0dca0443407bacfc95b1892d684,
+    type: 3}
+  m_PrefabInstance: {fileID: 423982602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &535256232
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535256231}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38
 --- !u!1 &850552037
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,6 +406,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1138250517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8846090547169041366, guid: 8463ea576672a4accbeac2da6d824fa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1637536324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1138250518
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138250517}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!1 &1498461497
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498461499}
   - component: {fileID: 1498461498}
+  - component: {fileID: 1498461500}
   m_Layer: 9
   m_Name: Moon
   m_TagString: Untagged
@@ -465,6 +510,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1498461500
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498461497}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!1001 &1637536324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -475,7 +536,7 @@ PrefabInstance:
     - target: {fileID: 8846090547169041366, guid: 8463ea576672a4accbeac2da6d824fa3,
         type: 3}
       propertyPath: m_Name
-      value: DarkPlanet
+      value: BluePlanet
       objectReference: {fileID: 0}
     - target: {fileID: 8846090547169041366, guid: 8463ea576672a4accbeac2da6d824fa3,
         type: 3}
@@ -555,7 +616,12 @@ PrefabInstance:
     - target: {fileID: 794869458640716395, guid: 8463ea576672a4accbeac2da6d824fa3,
         type: 3}
       propertyPath: Speed
-      value: -35
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 794869458640716395, guid: 8463ea576672a4accbeac2da6d824fa3,
+        type: 3}
+      propertyPath: MoveCircular
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3781935642547190781, guid: 8463ea576672a4accbeac2da6d824fa3,
         type: 3}
@@ -579,6 +645,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8463ea576672a4accbeac2da6d824fa3, type: 3}
+--- !u!1 &1838193930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7309532645521951471, guid: 9659d0dca0443407bacfc95b1892d684,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492095290706023248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1838193931
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838193930}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.42
 --- !u!1 &1874156205
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daef6145e577741e0b532f5831c27bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 27
+  Speed: 50
 --- !u!4 &2042616837
 Transform:
   m_ObjectHideFlags: 0

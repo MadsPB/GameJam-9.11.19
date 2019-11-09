@@ -7,6 +7,7 @@ public class FlickVisual : MonoBehaviour
     public List<GameObject> ArrowPieces;
 
     private Vector2 _startingPointerPosition;
+    private bool _isVisible;
 
     public void Start()
     {
@@ -18,7 +19,6 @@ public class FlickVisual : MonoBehaviour
     private void HandlePointerDown(Vector2 position)
     {
         _startingPointerPosition = position;
-        Show();
     }
 
     private void HandlePointerUp(Vector2 position)
@@ -29,6 +29,9 @@ public class FlickVisual : MonoBehaviour
 
     private void HandleDrag(Vector2 position)
     {
+        if (_isVisible == false)
+            Show();
+
         var yScale = position - _startingPointerPosition;
         var differenceVector = position - _startingPointerPosition;
         var angle = Mathf.Atan2(differenceVector.y, differenceVector.x);
@@ -45,6 +48,8 @@ public class FlickVisual : MonoBehaviour
         {
             arrowPiece.SetActive(true);
         }
+
+        _isVisible = true;
     }
 
     private void Hide()
@@ -53,5 +58,7 @@ public class FlickVisual : MonoBehaviour
         {
             arrowPiece.SetActive(false);
         }
+
+        _isVisible = false;
     }
 }

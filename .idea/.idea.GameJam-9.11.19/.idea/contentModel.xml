@@ -13,6 +13,7 @@
           <e p="FlickVisual.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="PlanetMovement.cs" t="Include" />
+          <e p="PlanetPullBearBehavior.cs" t="Include" />
         </e>
       </e>
       <e p="GameJam-9.11.19.sln" t="IncludeFlat" />

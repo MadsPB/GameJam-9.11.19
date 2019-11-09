@@ -5,11 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public UIManager UIManager;
     public static bool didShoot = false;
+    public static GameManager instance;
     
     public bool IsGameActive;
 
     void Start()
     {
+        instance = this;
         IsGameActive = true;
     }
 
@@ -27,7 +29,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void HandleWin()
+    public void HandleWin()
     {
         if (IsGameActive)
         {
@@ -36,7 +38,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void HandleLose()
+    public void HandleLose()
     {
         if (IsGameActive)
         {

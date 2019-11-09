@@ -7,11 +7,12 @@ public class PlanetMovement : MonoBehaviour
     [SerializeField] private float Speed = 10f;
 
     [SerializeField] private bool MoveCircular = true;
+    [SerializeField] private float Tilt = 45f;
 
     private Action _move;
-    private float _radius;
 
-    // Start is called before the first frame update
+    // private float _radius;
+
     private void Start()
     {
         if (MoveCircular)
@@ -22,11 +23,10 @@ public class PlanetMovement : MonoBehaviour
             _move = ElipsularMovement;
         }
 
-        _radius = (transform.position - Moon.position).magnitude;
+        // _radius = (transform.position - Moon.position).magnitude;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         _move();
     }
@@ -34,19 +34,10 @@ public class PlanetMovement : MonoBehaviour
     private void CircularMovement()
     {
         var time = Time.deltaTime;
-        var cos = Mathf.Cos(time);
-
         var point = Moon.position;
         var axis = new Vector3(0, 0, 1);
         transform.RotateAround(point, axis, time * Speed);
     }
-    
-    
-   // public float alpha = 0f;
-
-    public float tilt = 45f;
-
-   
 
     float MCos(float value)
     {
@@ -60,10 +51,10 @@ public class PlanetMovement : MonoBehaviour
 
     private void ElipsularMovement()
     {
-        var alpha = Time.time;
-        
-        transform.position = new Vector2(0f + (0.5f * MCos(alpha) * MCos(tilt)) - ( 15f * MSin(alpha) * MSin(tilt)),
-                                         0f + (0.5f * MCos(alpha) * MSin(tilt)) + ( 15f * MSin(alpha) * MCos(tilt)));
-      //  alpha += 5f;
+        var time = Time.time;
+
+        transform.position = new Vector2(
+            0f + (0.5f * MCos(time) * MCos(Tilt)) - (15f * MSin(time) * MSin(Tilt)),
+            0f + (0.5f * MCos(time) * MSin(Tilt)) + (15f * MSin(time) * MCos(Tilt)));
     }
 }

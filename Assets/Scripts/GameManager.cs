@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public void HandleBearHitPlanet(Bear bear, Planet planet)
     {
+        bear.transform.SetParent(planet.transform);
+        bear.Rigidbody2D.simulated = false;
         if (planet.IsTarget)
         {
             HandleWin();
@@ -27,13 +29,19 @@ public class GameManager : MonoBehaviour
 
     private void HandleWin()
     {
-        IsGameActive = false;
-        UIManager.ShowWinScreen();
+        if (IsGameActive)
+        {
+            IsGameActive = false;
+            UIManager.ShowWinScreen();
+        }
     }
 
     private void HandleLose()
     {
-        IsGameActive = false;
-        UIManager.ShowLoseScreen();
+        if (IsGameActive)
+        {
+            IsGameActive = false;
+            UIManager.ShowLoseScreen();
+        }
     }
 }

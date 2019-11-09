@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bear : MonoBehaviour
 {
@@ -13,6 +10,8 @@ public class Bear : MonoBehaviour
 
     private Vector2 _startingPointerPosition;
 
+    private Vector3 _lastPosition;
+
     void Start()
     {
         InputManager.PointerDown += HandlePointerDown;
@@ -22,6 +21,16 @@ public class Bear : MonoBehaviour
     void FixedUpdate()
     {
         Rigidbody2D.velocity = Vector2.ClampMagnitude(Rigidbody2D.velocity, MaxVelocityMagnitude);
+
+        var moveDirection = transform.position - _lastPosition;
+
+        if (moveDirection != Vector3.zero)
+        {
+            var angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle - 90f, Vector3.forward);
+        }
+
+        _lastPosition = transform.position;
     }
 
     private void HandlePointerDown(Vector2 position)

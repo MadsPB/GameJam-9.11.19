@@ -6,15 +6,11 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Bear.cs" t="Include" />
-          <e p="Default.cs" t="Include" />
           <e p="FlickVisual.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="PlanetMovement.cs" t="Include" />
-<<<<<<< HEAD
-          <e p="PlanetPullBearBehavior.cs" t="Include" />
-=======
           <e p="PlanetOrbit.cs" t="Include" />
->>>>>>> c49274c227b604d0703415763259e186b1d6a81d
+          <e p="PlanetPullBearBehavior.cs" t="Include" />
         </e>
       </e>
       <e p="GameJam-9.11.19.sln" t="IncludeFlat" />
